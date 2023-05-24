@@ -8,4 +8,4 @@ abrir o projecto no terminal e rodar os seguintes  comandos
 4- entrar na pasta app/Providers aceder o arquivo  AppServiceProvider.php e descomentar o que esta comentado
 5 rodar o comando php artisan serve para rodar o projecto
 
-6- usuario master username:mario500 senha:12345678
+6- usuario master username:admin senha:12345678
