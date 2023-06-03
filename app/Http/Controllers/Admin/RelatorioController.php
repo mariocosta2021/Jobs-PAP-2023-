@@ -33,7 +33,7 @@ class RelatorioController extends Controller
         $pdf = PDF::loadview('admin.pdf.inscritos.index', $response);
 
         //Logger
-        $this->Logger->log('info', 'Imprimiu uma lista de vagas ');
+        $this->Logger->log('info', 'Imprimiu uma lista de inscritos ');
         return $pdf->setPaper('A4', 'landscape')->stream('pdf');
     }
 }
