@@ -43,7 +43,7 @@
                     @csrf
                     <div class="col-lg-9 d-md-flex">
                         <input required name="emprego" class="form-control input-rounded mr-auto mb-md-0 mb-3" type="text"
-                            placeholder="procure uma vaga para voçê">
+                            placeholder="Procurar">
 
                             <button class="btn btn-primary btn-rounded" type="submit"> <i
                                 class="las la-search scale5 mr-3"></i>Buscar</button>
@@ -64,8 +64,7 @@
 
 
                 @foreach ($empregos as $item)
-                    @if (  (date('y', strtotime($item->dataVaga)) >= date('y') && date('m', strtotime($item->dataVaga)) >= date('m')) ||
-                            date('d', strtotime($item->dataVaga)) >= date('d'))
+
                         <div class="col-xl-4 col-lg-6">
                             <div class="card  shadow_1">
                                 <div class="card-body">
@@ -77,7 +76,7 @@
                                                 style='background-image:url("/storage/{{ $item->imagemEmprego }}");background-position:center;background-size:cover;height:200px;width:auto'>
                                             </div>
                                             <p class="mb-1">Empresa: {{ $item->nomeEmresa }}</p>
-                                            <h4 class="fs-20 text-black"><a class="text-black" href="statistics.html">
+                                            <h4 class="fs-20 text-black"><a class="text-black" href="{{ route('admin.buscar.detalhes', $item->id) }}">
                                                     {{ $item->tituloEmprego }}</a></h4>
                                         </div>
 
@@ -95,7 +94,6 @@
                                 </div>
                             </div>
                         </div>
-                    @endif
                 @endforeach
 
             </div>

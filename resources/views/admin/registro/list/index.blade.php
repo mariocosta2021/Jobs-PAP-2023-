@@ -15,7 +15,7 @@
                             <h5 class="card-title">Solicitações de Empresas</h5>
                             <table class="table table-borderless datatable">
                                 <thead>
-                                    <tr class="">
+                                    <tr class="text-center">
                                         <th>ID</th>
                                         <th>Nome da empresa </th>
                                         <th>Telefone</th>

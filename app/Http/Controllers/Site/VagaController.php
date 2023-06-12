@@ -15,7 +15,8 @@ class VagaController extends Controller
      */
     public function index()
     {
-        $Response['vagas']=Vaga::get();
+        //$Response['vagas']=Vaga::get();
+        $Response['vagas']=Vaga::whereDate('dataVaga', '>', date('Y/m/d'))->get();
         return view('site.vagas.index',$Response);
     }
 

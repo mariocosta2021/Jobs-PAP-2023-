@@ -152,14 +152,14 @@
 
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#relatorio" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-file-pdf-fill"></i><span>Relátorio</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-file-pdf-fill"></i><span>Relátorios</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="relatorio" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li><a href="{{ route('admin.relatorio.vagas') }}">Vagas Publicadas</a></li>
-                    <li><a href="{{ route('admin.relatorio.inscritos') }}">Inscrições a vagas</a></li>
+                    <li><a href="{{ route('admin.relatorio.inscritos') }}">Incritos às vagas</a></li>
+                    <li><a href="{{route('admin.relatorio.vagas_empresa')}}" class="d-none">Vagas por Empresa</a></li>
                     @if(Auth::user()->level == 'Administrador-Master')
-                        <li><a href="#">Empresas mais Procuradas</a></li>
-                        <li><a href="#">Categoria mais Procurada</a></li>
+                    <li><a href="{{Route('admin.vaga_filtro.index')}}">Relatório Personolizado</a></li>
                     @endif
                 </ul>
             </li><!-- Empresas -->

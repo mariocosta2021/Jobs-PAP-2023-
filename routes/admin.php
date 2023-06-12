@@ -127,9 +127,13 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/empresas/store', ['as' => 'admin.empresas.store', 'uses' => 'Admin\EmpresasController@store']);
 
 
+    //Exibindo pagina para filtragem de dados
+    Route::get('admin/vaga_filtro/index', ['as' => 'admin.vaga_filtro.index', 'uses' => 'Admin\RelatorioController@vaga_filtro']);
+
 
     //relatorio
     Route::get('admin/relatorio/vagas', ['as' => 'admin.relatorio.vagas', 'uses' => 'Admin\RelatorioController@vaga']);
+    Route::get('admin/relatorio/vagas_empresa', ['as' => 'admin.relatorio.vagas_empresa', 'uses' => 'Admin\RelatorioController@vaga_empresa']);
 
     Route::get('admin/relatorio/inscritos', ['as' => 'admin.relatorio.inscritos', 'uses' => 'Admin\RelatorioController@inscritos']);
 

@@ -63,7 +63,7 @@ try {
         'nomeEmresa' => 'required|string|max:100',
         'descricaoEmpreego' => 'required',
         'telefoneEmprego' => 'required|max:12',
-        'tempoVaga' => 'required',
+        'tempoVaga' => 'required|min:1',
         'dataVaga' => 'required',
         'imagemEmprego' => 'mimes:jpg,png,gif,SVG,EPS',
     ]);

@@ -443,6 +443,7 @@
                                                     value: Vagas,
                                                     name: 'Vagas'
                                                 },
+
                                             ]
                                         }]
                                     });
@@ -528,9 +529,6 @@
 
         </div>
     </section>
-
-
-
 
 
 @endsection

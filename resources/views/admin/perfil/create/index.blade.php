@@ -225,5 +225,10 @@ profissional</span>
 </div>
 </form>
 
+<script>
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("dataNascimento")[0].setAttribute('max', today);
+</script>
+
 
 @endsection

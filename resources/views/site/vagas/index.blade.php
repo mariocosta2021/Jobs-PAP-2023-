@@ -27,16 +27,17 @@
         <div class="container" data-aos="fade-up">
 
             <header class="section-header">
-                <h2 class="d-none">Vagas Publicadas</h2>
-                <p>Vagas Disponíveis</p>
+                <h2>Lista de vagas publicadas diponiveis</h2>
+                @if ($vagas ->count()== 0)
+                    <p>Sem vagas disponíveis</p>
+                @else
+                    <p>Vagas Disponíveis</p>
+                @endif
             </header>
 
             <div class="row g-5">
 
                 @foreach ($vagas as $item)
-                    @if (
-                        (date('Y', strtotime($item->dataVaga)) >= date('Y') && date('m', strtotime($item->dataVaga)) >= date('m')) ||
-                            date('d', strtotime($item->dataVaga)) <= date('d'))
                         <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
                             <div class="box">
                                 <h3>{{ $item->tituloEmprego }} </h3>
@@ -48,7 +49,6 @@
                                 <a href="{{ route('admin.buscar.detalhes', $item->id) }}" class="btn btn-primary my-3 w-100" id="btn-inscricao">Inscreva-se</a>
                             </div>
                         </div>
-                    @endif
                 @endforeach
             </div>
 

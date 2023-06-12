@@ -42,5 +42,6 @@
             </tbody>
         </table>
     </section>
+    <p>TOTAL: {{$vaga_total}}</p>
 </body>
 </html>

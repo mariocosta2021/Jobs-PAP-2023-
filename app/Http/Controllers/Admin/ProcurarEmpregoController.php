@@ -42,9 +42,9 @@ class ProcurarEmpregoController extends Controller
 
             return redirect()->route('admin.home');
         } else {
-            $reponse['empregos'] = Vaga::with('categoria')->paginate(6);
+            $reponse['empregos'] = Vaga::whereDate('dataVaga', '>', date('Y/m/d'))->with('categoria')->paginate(6);
             $response['perfil'] =  Perfil::where('fk_user', Auth::user()->id)->count();
-            $reponse['totalempregos'] = Vaga::with('categorias')->count();
+            $reponse['totalempregos'] = Vaga::whereDate('dataVaga', '>', date('Y/m/d'))->with('categorias')->count();
             $this->Logger->log('info', 'Entrou em Procurar Emprego');
             return view('admin.buscaEmprego.list.index', $reponse);
         }
@@ -85,8 +85,8 @@ class ProcurarEmpregoController extends Controller
 
         if ($res > 0) {
             try {
-                $response['empregos'] = Vaga::with('categoria')->where('tituloEmprego', 'LIKE', "%{$pesquisa}%")->paginate(6);
-                $response['totalempregos'] = Vaga::with('categoria')->where('tituloEmprego', 'LIKE', "%{$pesquisa}%")->count();
+                $response['empregos'] = Vaga::whereDate('dataVaga', '>', date('Y/m/d'))->with('categoria')->where('tituloEmprego', 'LIKE', "%{$pesquisa}%")->paginate(6);
+                $response['totalempregos'] = Vaga::whereDate('dataVaga', '>', date('Y/m/d'))->with('categoria')->where('tituloEmprego', 'LIKE', "%{$pesquisa}%")->count();
                 return view('admin.buscaEmprego.detalis.index', $response);
 
                 return view('site.news.single.index', $response);

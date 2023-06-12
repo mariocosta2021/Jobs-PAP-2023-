@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                <img src="site/assets/img/404.png" class="img-fluid" alt="">
+                <img src="{{ asset('dashboard/img/404.png') }}" class="img-fluid" alt="">
             </div>
         </div>
     </div>

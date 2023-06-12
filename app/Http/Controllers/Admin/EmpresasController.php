@@ -18,7 +18,7 @@ class EmpresasController extends Controller
     }
     public function index()
     {
-        $reponse['empregos'] =   Empresa::paginate(6);
+        $reponse['empregos'] = Empresa::get();
 
         $reponse['totalempregos'] = Empresa::count();
         $this->Logger->log('info', 'Entrou  em Procurar Vagas');

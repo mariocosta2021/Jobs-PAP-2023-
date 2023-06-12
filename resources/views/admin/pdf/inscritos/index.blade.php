@@ -38,6 +38,7 @@
                     </tr>
                 @endforeach
             </tbody>
+            <p class="text-end "><b>TOTAL: {{$candidados}}</b></p>
         </table>
     </section>
 

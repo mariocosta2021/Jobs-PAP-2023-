@@ -53,7 +53,7 @@
     <label for="data_vaga" class="form-label">Disponível até</label>
 
     <input type="date" class="form-control" id="inputGroupPrepend2" aria-describedby="inputGroupPrepend2"
-        name="dataVaga" />
+        name="dataVaga"/>
 </div>
 <div class="col-lg-12 mb-2">
     <label class="text-label">Descrição do Vaga*</label>

@@ -14,8 +14,8 @@
       <div class="row gy-5">
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="{{ route('site.home') }}" class="logo d-flex align-items-center">
-            <img src="site/assets/img/jobs.png" alt="">
-            <span class="d-none">PAP - 2022/2023</span>
+            <img class="d-none" src="site/assets/img/jobs.png" alt="">
+            <span >PAP - 2022/2023</span>
           </a>
           <p> <strong>JOBS - Sistema de Gestão de Candidaturas</strong><br>
             criado com objectivo de facilitar as pessoas <br>
