@@ -157,7 +157,7 @@
                         <ul>
                             @foreach ($vagasRecentes as $item)
                                 <li>
-                                    <a href="#">{{ $item->tituloEmprego }}</a>
+                                    <a href="{{ route('site.vagas') }}">{{ $item->tituloEmprego }}</a>
                                     <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                                         <p>
                                             <strong>Empresa: </strong> {{ $item->nomeEmresa }} <br>

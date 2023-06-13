@@ -15,8 +15,8 @@
     <header class="col-12 mt-2 mb-5">
         <img src="site/assets/img/jobs.png" class="d-none" alt="" width="200px">
         <h2 class="text-center">Sistema de Gestão de Candidaturas</h2>
-        
-        <p><h2 class="text-center">Relatório de Inscritos às Vagas</h2> <b>Data:</b> {{ date('d-m-Y') }}<br></p>
+
+        <p><h4 class="text-center">Relatório de Inscritos às Vagas</h4> <b>Data:</b> {{ date('d-m-Y') }}<br></p>
     </header>
     <section class="col-12">
         <table class="table table-striped">
