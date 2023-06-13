@@ -202,7 +202,8 @@ class DashboardController extends Controller
             $reponse['dezEmpresa'] = json_encode(Candidaturas::whereMonth('created_at', '=', '12')->count());
             $response['dezEmpresa'] = json_encode($reponse['dezEmpresa']);
 
-            $response['empresaCount'] = json_encode(Empresa::count());
+            $response['empresaCount'] = json_encode(Empresa::where('status', "=", "Aprovado")->count());
+            //$response['empresaCount'] = json_encode(Empresa::count());
             $response['Vagas'] = Vaga::count();
             $response['candidatos'] =   User::where('level', 'cliente')->count();
             return view('admin.home.index', $response);

@@ -4,8 +4,8 @@
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
     <a href="{{ route('site.home') }}" class="logo d-flex align-items-center">
-      <img src="site/assets/img/jobs.png" alt="">
-      <span class="d-none">PAP - 2022/2023</span>
+      <img class="d-none" src="site/assets/img/jobs.png" alt="">
+      <span >PAP - 2022/2023</span>
     </a>
 
     <nav id="navbar" class="navbar">

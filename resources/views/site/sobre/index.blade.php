@@ -40,25 +40,25 @@
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="box">
                 <img src="site/assets/img/values-1.png" class="img-fluid" alt="">
-                <h3>Ad cupiditate sed est odio</h3>
+                <h3>Facilitar o Acesso à Informação</h3>
                 <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-            </div>
-            </div>
-
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-                <img src="site/assets/img/values-2.png" class="img-fluid" alt="">
-                <h3>Automatizar os processos</h3>
-                <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
             </div>
             </div>
 
             <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
             <div class="box">
-                <img src="site/assets/img/values-3.png" class="img-fluid" alt="">
-                <h3>Economizar tempo.</h3>
+                <img src="site/assets/img/values-2.png" class="img-fluid" alt="">
+                <h3>Economizar o Tempo.</h3>
                 <p>Com os processos automatizados a gestão é produtiva.</p>
             </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                <div class="box">
+                    <img src="site/assets/img/values-3.png" class="img-fluid" alt="">
+                    <h3>Automentar a Produtividade</h3>
+                    <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
+                </div>
             </div>
 
         </div>

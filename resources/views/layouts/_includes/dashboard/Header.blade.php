@@ -49,7 +49,8 @@
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="{{ route('admin.home') }}" class="logo d-flex align-items-center">
-                <img src=" {{ asset('dashboard/img/jobs.png') }}" style="display:flex; margin-left:10%; with:auto; height:auto" alt="" class="image-fluid ">
+                <img src=" {{ asset('dashboard/img/jobs.png') }}" style="display:flex; margin-left:10%; with:auto; height:auto" alt="" class="image-fluid d-none">
+                PAP 2022-2023
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -99,8 +100,8 @@
                                 <li class="notification-item">
                                     <i class="bi bi-check-circle text-success"></i>
                                     <div>
-                                        <h4>Candidatura automática</h4>
-                                        <p>Candidatura automática realizada com sucesso para a vaga de {{ $item->tituloEmprego }} na empresa {{ $item->nomeEmresa }} na categoria de {{ $item->nomeCategoria }}  </p>
+                                        <h4>Nova Vaga</h4>
+                                        <p>Vaga de  {{ $item->tituloEmprego }} na empresa {{ $item->nomeEmresa }} na categoria de {{ $item->nomeCategoria }}  </p>
                                         <p>{{ $item->created_at }}</p>
                                     </div>
                                 </li>

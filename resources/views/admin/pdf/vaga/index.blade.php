@@ -13,7 +13,9 @@
 
 <body style='height:auto; width:100%;  no-repeat center;'>
     <header class="col-12 mt-2 mb-5">
-        <img src="site/assets/img/jobs.png" alt="" width="200px">
+        <img src="site/assets/img/jobs.png" class="d-none" alt="" width="200px">
+        <h2 class="text-center">Sistema de Gestão de Candidaturas</h2>
+        
         <p><h2 class="text-center">Relatório de Vagas Publicadas</h2> <b>Data:</b> {{ date('d-m-Y') }}<br></p>
     </header>
     <section class="col-12">

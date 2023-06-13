@@ -39,7 +39,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Idiomas</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiência </a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-                <div class="container-fluid mt-5 d-flex justify-content-center w-100">
+                <div class=" d-none container-fluid mt-5 d-flex justify-content-center w-100">
                     {!! QrCode::size(140)->generate(url('membro/startup/' . $curriculo->email . $curriculo->nomeCliente )) !!}
                 </div>
             </ul>

@@ -26,7 +26,7 @@ class HomeController extends Controller
         $Response['empresas'] =   Empresa::where('status', '=', 'Aprovado')->get();
         $Response['empresaCadastrada'] =    Empresa::where('status', '=', 'Aprovado')->count();
         $Response['UsuarioCadastrada'] = User::where('level', '=', 'cliente')->count();
-        $Response['vagas'] = Vaga::sum('tempoVaga');
+        $Response['vagas'] = Vaga::whereDate('dataVaga', '>', date('Y/m/d'))->sum('tempoVaga');
         $Response['vagasRecentes']=Vaga::whereDate ('dataVaga', '>', date('Y/m/d'))->orderBy('id','Desc')->paginate(3);
         return view('site.home.index', $Response);
     }
